@@ -1,8 +1,8 @@
 -- Flynzo Tours Database Schema
 -- Run this in your Supabase SQL editor
 
--- Enable Row Level Security
-ALTER DATABASE postgres SET "app.jwt_secret" TO 'your-jwt-secret';
+-- Note: JWT secret is configured in Supabase Dashboard > Settings > API
+-- No need to set it via SQL as it requires superuser privileges
 
 -- Create destinations table
 CREATE TABLE IF NOT EXISTS destinations (
