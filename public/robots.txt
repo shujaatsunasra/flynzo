@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Host
+Host: https://flynzo.vercel.app
+
+# Sitemaps
+Sitemap: https://flynzo.vercel.app/sitemap.xml
