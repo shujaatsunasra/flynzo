@@ -44,7 +44,7 @@ const expertiseStats = [
 
 export function TravelExpertise() {
   return (
-    <section className="relative py-16 sm:py-20 md:py-32 bg-white overflow-hidden">
+    <section className="relative py-16 sm:py-20 md:py-32 bg-theme-light overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Subtle pattern */}
@@ -85,7 +85,7 @@ export function TravelExpertise() {
           viewport={{ once: true }}
         >
           <motion.h2
-            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6"
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold text-theme-text mb-6"
             style={{ lineHeight: '1.1' }}
           >
             Why Travelers Choose
@@ -109,18 +109,18 @@ export function TravelExpertise() {
               whileHover={{ y: -5 }}
             >
               {/* Card Background */}
-              <div className="relative bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-100 group-hover:border-neutral-200">
+              <div className="relative bg-theme-light rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-100 group-hover:border-neutral-200">
                 {/* Icon */}
                 <motion.div
-                  className="w-12 h-12 md:w-16 md:h-16 bg-neutral-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-neutral-900 transition-colors duration-300"
+                  className="w-12 h-12 md:w-16 md:h-16 bg-theme-heading/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-theme-text transition-colors duration-300"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
-                  <stat.icon className="w-6 h-6 md:w-8 md:h-8 text-neutral-600 group-hover:text-white transition-colors duration-300" />
+                  <stat.icon className="w-6 h-6 md:w-8 md:h-8 text-theme-text/70 group-hover:text-theme-light transition-colors duration-300" />
                 </motion.div>
 
                 {/* Number */}
                 <motion.div
-                  className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-neutral-900 mb-2"
+                  className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-theme-text mb-2"
                   initial={{ scale: 0.5 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
@@ -141,7 +141,7 @@ export function TravelExpertise() {
 
                 {/* Hover accent */}
                 <motion.div
-                  className="absolute bottom-0 left-0 h-1 bg-neutral-900 rounded-b-2xl"
+                  className="absolute bottom-0 left-0 h-1 bg-theme-text rounded-b-2xl"
                   initial={{ width: 0 }}
                   whileHover={{ width: "100%" }}
                   transition={{ duration: 0.3 }}

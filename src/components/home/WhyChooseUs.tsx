@@ -8,43 +8,43 @@ const features = [
     icon: Shield,
     title: 'Safe & Secure',
     description: 'Your safety is our priority with comprehensive insurance and 24/7 support.',
-    color: 'bg-neutral-100 text-neutral-900'
+    color: 'bg-theme-light text-theme-text'
   },
   {
     icon: Award,
     title: 'Award Winning',
     description: 'Recognized globally for our exceptional service and customer satisfaction.',
-    color: 'bg-neutral-100 text-neutral-900'
+    color: 'bg-theme-light text-theme-text'
   },
   {
     icon: Heart,
     title: 'Personalized',
     description: 'Tailored experiences designed around your preferences and interests.',
-    color: 'bg-neutral-100 text-neutral-900'
+    color: 'bg-theme-light text-theme-text'
   },
   {
     icon: Clock,
     title: '24/7 Support',
     description: 'Round-the-clock assistance whenever and wherever you need us.',
-    color: 'bg-neutral-100 text-neutral-900'
+    color: 'bg-theme-light text-theme-text'
   },
   {
     icon: Plane,
     title: 'Best Routes',
     description: 'Carefully planned itineraries to maximize your travel experience.',
-    color: 'bg-neutral-100 text-neutral-900'
+    color: 'bg-theme-light text-theme-text'
   },
   {
     icon: Users,
     title: 'Expert Guides',
     description: 'Professional local guides with deep knowledge of each destination.',
-    color: 'bg-neutral-100 text-neutral-900'
+    color: 'bg-theme-light text-theme-text'
   }
 ]
 
 export function WhyChooseUs() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-primary-50">
+    <section className="py-16 sm:py-20 md:py-24 bg-theme-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -54,8 +54,8 @@ export function WhyChooseUs() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-neutral-900 mb-4">
-            Why Choose <span className="text-neutral-900">Flynzo</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-theme-text mb-4">
+            Why Choose <span className="text-theme-text">Flynzo</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto px-4">
             We're committed to providing exceptional travel experiences that exceed your expectations
@@ -80,7 +80,7 @@ export function WhyChooseUs() {
                   <Icon className="w-8 h-8" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-xl font-bold text-theme-text mb-3 group-hover:text-primary-600 transition-colors">
                   {feature.title}
                 </h3>
                 
@@ -94,7 +94,7 @@ export function WhyChooseUs() {
 
         {/* Stats Section */}
         <motion.div
-          className="mt-20 bg-neutral-900 rounded-2xl p-8 md:p-12 text-white"
+          className="mt-20 bg-theme-dark rounded-2xl p-8 md:p-12 text-theme-heading"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

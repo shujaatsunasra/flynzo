@@ -42,7 +42,7 @@ export function BookingSuccess({ bookingData }: BookingSuccessProps) {
 
           {/* Success Message */}
           <motion.h1
-            className="text-2xl font-bold text-neutral-900 mb-4"
+            className="text-2xl font-bold text-theme-text mb-4"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -68,7 +68,7 @@ export function BookingSuccess({ bookingData }: BookingSuccessProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <h3 className="font-semibold text-neutral-900 mb-2">Booking Summary:</h3>
+              <h3 className="font-semibold text-theme-text mb-2">Booking Summary:</h3>
               <div className="space-y-1 text-sm text-neutral-600">
                 <p><strong>Name:</strong> {bookingData.firstName} {bookingData.lastName}</p>
                 <p><strong>Destination:</strong> {bookingData.destination || bookingData.customDestination}</p>

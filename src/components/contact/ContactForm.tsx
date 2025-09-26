@@ -51,7 +51,7 @@ export function ContactForm() {
         >
           <div className="text-center mb-8">
             <MessageCircle className="w-12 h-12 text-primary-500 mx-auto mb-4" />
-            <h2 className="text-3xl font-bold text-neutral-900 mb-4">Send us a Message</h2>
+            <h2 className="text-3xl font-bold text-theme-text mb-4">Send us a Message</h2>
             <p className="text-neutral-600">
               Have a question or ready to start planning? Fill out the form below and we'll respond promptly.
             </p>
@@ -190,10 +190,10 @@ export function ContactForm() {
               Prefer to contact us directly?
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8">
-              <a href="tel:+919773713859" className="text-neutral-900 hover:text-neutral-700 hover-effect">
+              <a href="tel:+919773713859" className="text-theme-text hover:text-theme-text/70 hover-effect">
                 📞 +91 9773713859
               </a>
-              <a href="mailto:Info.flynzo@gmail.com" className="text-neutral-900 hover:text-neutral-700 hover-effect">
+              <a href="mailto:Info.flynzo@gmail.com" className="text-theme-text hover:text-theme-text/70 hover-effect">
                 ✉️ Info.flynzo@gmail.com
               </a>
             </div>

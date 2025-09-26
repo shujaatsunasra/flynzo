@@ -44,8 +44,8 @@ export function FeaturedTours() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-neutral-900 mb-4">
-            Featured <span className="text-neutral-900">Tours</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-theme-text mb-4">
+            Featured <span className="text-theme-text">Tours</span>
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
             Discover our most popular destinations handpicked by travel experts
@@ -72,7 +72,7 @@ export function FeaturedTours() {
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-sm font-semibold text-neutral-900">{tour.price}</span>
+                  <span className="text-sm font-semibold text-theme-text">{tour.price}</span>
                 </div>
                 <div className="absolute top-4 left-4 flex items-center space-x-1 bg-white/90 backdrop-blur-sm rounded-lg px-2 py-1">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
@@ -87,7 +87,7 @@ export function FeaturedTours() {
                   {tour.destination}
                 </div>
                 
-                <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-xl font-bold text-theme-text mb-2 group-hover:text-primary-600 transition-colors">
                   {tour.title}
                 </h3>
                 

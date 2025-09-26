@@ -95,7 +95,7 @@ Thank you for choosing Flynzo! 🌟`
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-theme-dark/50 backdrop-blur-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -115,7 +115,7 @@ Thank you for choosing Flynzo! 🌟`
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-800">WhatsApp Message Preview</h3>
+                  <h3 className="text-lg font-bold text-theme-text">WhatsApp Message Preview</h3>
                   <p className="text-sm text-slate-600">Review your booking details before sending</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ Thank you for choosing Flynzo! 🌟`
               <div className="flex items-center space-x-3">
                 <button
                   onClick={handleCopy}
-                  className="flex items-center space-x-2 px-4 py-2 text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-colors"
+                  className="flex items-center space-x-2 px-4 py-2 text-theme-text/70 hover:text-theme-text hover:bg-theme-light/50 rounded-lg transition-colors"
                 >
                   {isCopied ? (
                     <>
@@ -160,7 +160,7 @@ Thank you for choosing Flynzo! 🌟`
               <div className="flex items-center space-x-3">
                 <button
                   onClick={onClose}
-                  className="px-6 py-2 text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-colors font-medium"
+                  className="px-6 py-2 text-theme-text/70 hover:text-theme-text hover:bg-theme-light/50 rounded-lg transition-colors font-medium"
                 >
                   Cancel
                 </button>

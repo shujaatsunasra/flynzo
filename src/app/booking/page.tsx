@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function BookingPage() {
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+    <div className="h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
       <BookingForm />
     </div>
   )

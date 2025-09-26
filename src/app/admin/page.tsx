@@ -306,7 +306,7 @@ export default function AdminPanel() {
       <div className="max-w-7xl mx-auto p-6">
         <div className="mb-8 flex justify-between items-center">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Flynzo Admin Panel</h1>
+            <h1 className="text-3xl font-bold text-theme-text mb-2">Flynzo Admin Panel</h1>
             <p className="text-gray-600">Manage your website content and tours</p>
           </div>
           <div className="flex items-center space-x-4">
@@ -355,7 +355,7 @@ export default function AdminPanel() {
 
         {/* Edit Modal */}
         {isEditing && editingItem && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-theme-dark bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-bold">Edit {activeTab.slice(0, -1)}</h2>

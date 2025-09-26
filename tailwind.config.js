@@ -43,7 +43,12 @@ module.exports = {
           700: '#404040',
           800: '#262626',
           900: '#171717',
-        }
+        },
+        // Custom theme colors
+        'theme-dark': '#2B3530',
+        'theme-light': '#D1CCBF',
+        'theme-text': '#2B3530',
+        'theme-heading': '#D1CCBF',
       },
     fontFamily: {
       sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'var(--font-inter)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],

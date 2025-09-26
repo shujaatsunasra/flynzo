@@ -37,7 +37,7 @@ export function WhatsAppButton({
       disabled={disabled || isSubmitting}
       className={`
         relative overflow-hidden rounded-xl px-8 py-4 font-semibold text-white
-        bg-black hover:bg-gray-800
+        bg-theme-text hover:bg-theme-text/80
         disabled:opacity-50 disabled:cursor-not-allowed
         shadow-lg hover:shadow-xl transform hover:scale-105
         transition-all duration-300 ease-out
@@ -98,7 +98,7 @@ export function FloatingWhatsAppButton({ onClick }: { onClick: () => void }) {
   return (
     <motion.button
       onClick={onClick}
-      className="fixed bottom-6 right-6 z-50 bg-black hover:bg-gray-800 text-white p-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
+      className="fixed bottom-6 right-6 z-50 bg-theme-text hover:bg-theme-text/80 text-theme-light p-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, scale: 0 }}

@@ -165,8 +165,8 @@ export function Hero() {
             </div>
             
             {/* Blackish Glass Overlay - Match Preloader */}
-            <div className="absolute inset-0 bg-black/60" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
+            <div className="absolute inset-0 bg-theme-dark/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-theme-dark/20 via-transparent to-theme-dark/40" />
             
           </div>
         ))}
@@ -175,7 +175,7 @@ export function Hero() {
       {/* Floating Elements - Desktop Only */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         <motion.div
-          className="absolute top-20 left-20 w-2 h-2 bg-white/20 rounded-full"
+          className="absolute top-20 left-20 w-2 h-2 bg-theme-heading/20 rounded-full"
           animate={{ 
             y: [0, -20, 0],
             opacity: [0.2, 0.5, 0.2]
@@ -183,7 +183,7 @@ export function Hero() {
           transition={{ duration: 4, repeat: Infinity, delay: 0 }}
         />
         <motion.div
-          className="absolute top-40 right-32 w-1 h-1 bg-white/30 rounded-full"
+          className="absolute top-40 right-32 w-1 h-1 bg-theme-heading/30 rounded-full"
           animate={{ 
             y: [0, -15, 0],
             opacity: [0.3, 0.6, 0.3]
@@ -191,7 +191,7 @@ export function Hero() {
           transition={{ duration: 3, repeat: Infinity, delay: 1 }}
         />
         <motion.div
-          className="absolute bottom-32 left-32 w-3 h-3 bg-white/10 rounded-full"
+          className="absolute bottom-32 left-32 w-3 h-3 bg-theme-heading/10 rounded-full"
           animate={{ 
             y: [0, -25, 0],
             opacity: [0.1, 0.4, 0.1]
@@ -222,10 +222,10 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="inline-flex items-center space-x-2 bg-black/40 backdrop-blur-md rounded-full px-4 py-2 border border-white/10 mb-8"
+                className="inline-flex items-center space-x-2 bg-theme-dark/40 backdrop-blur-md rounded-full px-4 py-2 border border-theme-heading/10 mb-8"
               >
-                <Compass className="w-4 h-4 text-white" />
-                <span className="text-white text-sm" style={{ fontFamily: 'Helvetica, Arial, sans-serif', fontWeight: 700 }}>Flynzo Adventures</span>
+                <Compass className="w-4 h-4 text-theme-heading" />
+                <span className="text-theme-heading text-sm" style={{ fontFamily: 'Helvetica, Arial, sans-serif', fontWeight: 700 }}>Flynzo Adventures</span>
               </motion.div>
 
               {/* Main Headline - Perfect Typography Scale */}
@@ -235,7 +235,7 @@ export function Hero() {
                 transition={{ duration: 1, delay: 0.4 }}
                 className="mb-8"
               >
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-[0.95]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8)', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-theme-heading leading-[0.95]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8)', fontFamily: 'Karatone, serif', fontWeight: 'normal' }}>
                   <span className="block mb-1">
                     {stories[currentStory].title}
                   </span>
@@ -250,7 +250,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
-                className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-10 font-display"
+                className="text-lg sm:text-xl md:text-2xl text-theme-heading/90 leading-relaxed max-w-3xl mx-auto mb-10 font-display"
                 style={{ textShadow: '0 2px 10px rgba(0,0,0,0.8)', fontWeight: 300 }}
               >
                 {stories[currentStory].description}
@@ -265,7 +265,7 @@ export function Hero() {
               >
                 <Link
                   href="/destinations"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base text-black bg-white rounded-lg hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-black transition-all duration-300 group shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base text-theme-text bg-theme-light rounded-lg hover:bg-theme-light/90 focus:outline-none focus:ring-2 focus:ring-theme-light/50 focus:ring-offset-2 focus:ring-offset-theme-dark transition-all duration-300 group shadow-lg hover:shadow-xl"
                   style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontWeight: 400 }}
                 >
                   Start Your Story
@@ -273,7 +273,7 @@ export function Hero() {
                 </Link>
                 
                 <button 
-                  className="inline-flex items-center justify-center px-8 py-4 text-base text-white bg-black/20 backdrop-blur-sm border border-white/40 rounded-lg hover:bg-black/30 hover:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-black transition-all duration-300 group shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base text-theme-heading bg-theme-dark/20 backdrop-blur-sm border border-theme-heading/40 rounded-lg hover:bg-theme-dark/30 hover:border-theme-heading/60 focus:outline-none focus:ring-2 focus:ring-theme-heading/30 focus:ring-offset-2 focus:ring-offset-theme-dark transition-all duration-300 group shadow-lg hover:shadow-xl"
                   onClick={() => setIsPlaying(!isPlaying)}
                   style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontWeight: 400 }}
                 >
@@ -297,13 +297,13 @@ export function Hero() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 1.2 + index * 0.1 }}
-                    className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 text-center"
+                    className="bg-theme-heading/10 backdrop-blur-md rounded-xl p-6 border border-theme-heading/20 hover:bg-theme-heading/15 transition-all duration-300 text-center"
                   >
                     <div className="flex flex-col items-center space-y-3">
-                      <stat.icon className="w-8 h-8 text-white" />
+                      <stat.icon className="w-8 h-8 text-theme-heading" />
                       <div>
-                        <div className="text-3xl text-white mb-1" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontWeight: 700 }}>{stat.value}</div>
-                        <div className="text-white/70 text-sm font-display" style={{ fontWeight: 300 }}>{stat.label}</div>
+                        <div className="text-3xl text-theme-heading mb-1" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontWeight: 700 }}>{stat.value}</div>
+                        <div className="text-theme-heading/70 text-sm font-display" style={{ fontWeight: 300 }}>{stat.label}</div>
                       </div>
                     </div>
                   </motion.div>
@@ -324,20 +324,20 @@ export function Hero() {
         <div className="flex flex-col items-center space-y-3">
           {/* Enhanced scroll indicator with better visual design */}
           <div className="relative">
-            <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center bg-black/20 backdrop-blur-sm shadow-lg">
+            <div className="w-6 h-10 border-2 border-theme-heading/50 rounded-full flex justify-center bg-theme-dark/20 backdrop-blur-sm shadow-lg">
               <motion.div
-                className="w-1.5 h-3 bg-white rounded-full mt-2"
+                className="w-1.5 h-3 bg-theme-heading rounded-full mt-2"
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
               />
             </div>
             {/* Subtle glow effect */}
-            <div className="absolute inset-0 w-6 h-10 border border-white/20 rounded-full bg-gradient-to-b from-white/10 to-transparent" />
+            <div className="absolute inset-0 w-6 h-10 border border-theme-heading/20 rounded-full bg-gradient-to-b from-theme-heading/10 to-transparent" />
           </div>
           
           {/* Scroll text indicator */}
           <motion.div
-            className="text-white/60 text-xs tracking-wider uppercase font-display"
+            className="text-theme-heading/60 text-xs tracking-wider uppercase font-display"
             animate={{ opacity: [0.6, 1, 0.6] }}
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
             style={{ fontWeight: 300 }}

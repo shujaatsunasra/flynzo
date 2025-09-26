@@ -48,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body className={`${inter.className} antialiased bg-black text-neutral-900 overflow-x-hidden`}>
+      <body className={`${inter.className} antialiased bg-theme-dark text-theme-text overflow-x-hidden`}>
         <AuthProvider>
           <ClientLayout>
             {children}
@@ -58,7 +58,7 @@ export default function RootLayout({
             toastOptions={{
               duration: 4000,
               style: {
-                background: '#ffffff',
+                background: '#D1CCBF',
                 color: '#171717',
                 border: '1px solid #e5e5e5',
                 borderRadius: '12px',

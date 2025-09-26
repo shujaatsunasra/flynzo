@@ -96,8 +96,8 @@ export function TeamGrid() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-neutral-900 mb-4">
-            Meet Our <span className="text-neutral-900">Team</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-theme-text mb-4">
+            Meet Our <span className="text-theme-text">Team</span>
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
             The passionate professionals behind your unforgettable travel experiences
@@ -123,7 +123,7 @@ export function TeamGrid() {
                   alt={member.name}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-theme-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 {/* Social Links - Show on hover */}
                 <div className="absolute bottom-4 left-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -155,7 +155,7 @@ export function TeamGrid() {
                   {member.location}
                 </div>
                 
-                <h3 className="text-xl font-bold text-neutral-900 mb-1 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-xl font-bold text-theme-text mb-1 group-hover:text-primary-600 transition-colors">
                   {member.name}
                 </h3>
                 
@@ -189,7 +189,7 @@ export function TeamGrid() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-theme-text mb-4">
             Join Our Amazing Team
           </h3>
           <p className="text-lg text-neutral-600 mb-6 max-w-2xl mx-auto">

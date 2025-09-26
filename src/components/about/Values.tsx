@@ -14,7 +14,7 @@ const values = [
     icon: Shield,
     title: 'Safety First',
     description: 'Your safety and security are our top priorities. We maintain the highest standards and provide comprehensive support.',
-    color: 'bg-green-100 text-green-600'
+    color: 'bg-theme-light text-theme-text'
   },
   {
     icon: Star,
@@ -54,8 +54,8 @@ export function Values() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-neutral-900 mb-4">
-            Our <span className="text-neutral-900">Values</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-theme-text mb-4">
+            Our <span className="text-theme-text">Values</span>
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
             The principles that guide everything we do and shape every experience we create
@@ -80,7 +80,7 @@ export function Values() {
                   <Icon className="w-8 h-8" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-neutral-900 mb-4 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-xl font-bold text-theme-text mb-4 group-hover:text-primary-600 transition-colors">
                   {value.title}
                 </h3>
                 
@@ -94,7 +94,7 @@ export function Values() {
 
         {/* Mission Statement */}
         <motion.div
-          className="mt-20 bg-neutral-900 rounded-3xl p-8 md:p-12 text-white text-center"
+          className="mt-20 bg-theme-dark rounded-3xl p-8 md:p-12 text-theme-heading text-center"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}

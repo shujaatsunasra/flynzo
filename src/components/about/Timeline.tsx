@@ -60,8 +60,8 @@ export function Timeline() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-neutral-900 mb-4">
-            Our <span className="text-neutral-900">Journey</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-theme-text mb-4">
+            Our <span className="text-theme-text">Journey</span>
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
             From humble beginnings to becoming a trusted name in travel, here's our story
@@ -110,7 +110,7 @@ export function Timeline() {
                             <div className="text-2xl font-bold text-primary-600">{event.year}</div>
                           </div>
                         </div>
-                        <h3 className="text-xl font-bold text-neutral-900 mb-3">{event.title}</h3>
+                        <h3 className="text-xl font-bold text-theme-text mb-3">{event.title}</h3>
                         <p className="text-neutral-600 leading-relaxed">{event.description}</p>
                       </div>
                     </div>
@@ -133,7 +133,7 @@ export function Timeline() {
           viewport={{ once: true }}
         >
           <div className="bg-neutral-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+            <h3 className="text-2xl font-bold text-theme-text mb-4">
               Ready to Be Part of Our Story?
             </h3>
             <p className="text-neutral-600 mb-6">

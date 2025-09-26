@@ -55,8 +55,8 @@ export function Testimonials() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-neutral-900 mb-4">
-            What Our <span className="text-neutral-900">Travelers</span> Say
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-theme-text mb-4">
+            What Our <span className="text-theme-text">Travelers</span> Say
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto px-4">
             Don't just take our word for it - hear from our happy customers
@@ -97,7 +97,7 @@ export function Testimonials() {
                 className="w-16 h-16 rounded-full object-cover"
               />
               <div className="text-center md:text-left">
-                <div className="font-bold text-neutral-900 text-lg">
+                <div className="font-bold text-theme-text text-lg">
                   {currentTestimonial.name}
                 </div>
                 <div className="text-neutral-500">{currentTestimonial.location}</div>
@@ -131,7 +131,7 @@ export function Testimonials() {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all hover-effect ${
-                  currentIndex === index ? 'bg-neutral-900' : 'bg-neutral-300'
+                  currentIndex === index ? 'bg-theme-text' : 'bg-theme-heading/30'
                 }`}
               />
             ))}
@@ -156,7 +156,7 @@ export function Testimonials() {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <div className="font-semibold text-neutral-900">{testimonial.name}</div>
+                  <div className="font-semibold text-theme-text">{testimonial.name}</div>
                   <div className="text-sm text-neutral-500">{testimonial.location}</div>
                 </div>
               </div>

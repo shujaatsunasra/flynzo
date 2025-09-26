@@ -39,7 +39,7 @@ export function DestinationGrid() {
         {/* Results Header */}
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h2 className="text-2xl font-bold text-neutral-900">Popular Destinations</h2>
+            <h2 className="text-2xl font-bold text-theme-text">Popular Destinations</h2>
             <p className="text-neutral-600">{destinations.length} destinations found</p>
           </div>
           <select className="px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
@@ -69,7 +69,7 @@ export function DestinationGrid() {
                   alt={destination.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-theme-dark/70 via-transparent to-transparent" />
                 
                 {/* Overlay Info */}
                 <div className="absolute top-4 left-4 flex items-center space-x-2">
@@ -84,10 +84,10 @@ export function DestinationGrid() {
                 </div>
 
                  {/* Glassmorphism Text Overlay with Cursor Hover Effect */}
-                 <div className="absolute bottom-0 left-0 right-0 bg-black/35 backdrop-blur-md border-t border-white/10 transition-all duration-600 ease-out group-hover:bg-white/35 group-hover:border-white/40">
+                 <div className="absolute bottom-0 left-0 right-0 bg-theme-dark/35 backdrop-blur-md border-t border-theme-heading/10 transition-all duration-600 ease-out group-hover:bg-theme-heading/35 group-hover:border-theme-heading/40">
                   <div className="p-4">
-                    <h3 className="text-xl font-display font-bold text-white mb-1 transition-colors duration-600 ease-out group-hover:text-neutral-800">{destination.name}</h3>
-                    <p className="text-white/90 text-sm font-medium transition-colors duration-600 ease-out group-hover:text-neutral-700">{destination.tours} tours available</p>
+                    <h3 className="text-xl font-display font-bold text-theme-heading mb-1 transition-colors duration-600 ease-out group-hover:text-theme-text">{destination.name}</h3>
+                    <p className="text-theme-heading/90 text-sm font-medium transition-colors duration-600 ease-out group-hover:text-theme-text/70">{destination.tours} tours available</p>
                   </div>
                 </div>
               </div>

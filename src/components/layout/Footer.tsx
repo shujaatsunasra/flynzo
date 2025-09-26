@@ -50,31 +50,31 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-900 text-white">
+    <footer className="bg-theme-dark text-theme-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-6 sm:py-8 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 hover-effect mb-4">
-              <div className="flex items-center justify-center w-12 h-12 bg-neutral-100 rounded-xl">
-                <Plane className="w-6 h-6 text-neutral-900" />
+              <div className="flex items-center justify-center w-12 h-12 bg-theme-heading/10 rounded-xl">
+                <Plane className="w-6 h-6 text-theme-text" />
               </div>
               <span className="text-xl sm:text-2xl font-bold font-display">Flynzo</span>
             </Link>
-            <p className="text-sm text-neutral-400 mb-3 sm:mb-4 max-w-md hidden sm:block">
+            <p className="text-sm text-theme-heading/70 mb-3 sm:mb-4 max-w-md hidden sm:block">
               Discover amazing domestic destinations across India with our expertly crafted tours.
             </p>
             
             {/* Contact Info - Simplified for Mobile */}
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-center space-x-2 sm:space-x-3">
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-neutral-400" />
-                <span className="text-sm sm:text-base text-neutral-300">Info.flynzo@gmail.com</span>
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-theme-heading/70" />
+                <span className="text-sm sm:text-base text-theme-heading/80">Info.flynzo@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3 hidden sm:flex">
-                <Phone className="w-5 h-5 text-neutral-400" />
-                <span className="text-neutral-300">+91 9773713859, +91 9724287467</span>
+                <Phone className="w-5 h-5 text-theme-heading/70" />
+                <span className="text-theme-heading/80">+91 9773713859, +91 9724287467</span>
               </div>
             </div>
           </div>
@@ -150,9 +150,9 @@ export function Footer() {
         </div>
 
         {/* Bottom Footer - Compact Mobile */}
-        <div className="border-t border-neutral-800 py-3 sm:py-4 md:py-6">
+        <div className="border-t border-theme-heading/20 py-3 sm:py-4 md:py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
-            <p className="text-neutral-400 text-xs sm:text-sm text-center sm:text-left">
+            <p className="text-theme-heading/70 text-xs sm:text-sm text-center sm:text-left">
               © 2025 Flynzo Innovation Private Limited. All rights reserved.
             </p>
             
@@ -166,7 +166,7 @@ export function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-8 h-8 sm:w-10 sm:h-10 bg-neutral-800 hover:bg-neutral-700 rounded-lg flex items-center justify-center transition-all duration-300 hover-effect group"
+                    className="w-8 h-8 sm:w-10 sm:h-10 bg-theme-heading/20 hover:bg-theme-heading/30 rounded-lg flex items-center justify-center transition-all duration-300 hover-effect group"
                   >
                     <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                   </Link>

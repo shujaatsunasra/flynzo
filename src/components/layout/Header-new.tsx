@@ -63,7 +63,7 @@ export function HeaderNew() {
         ref={headerRef}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
           isScrolled 
-            ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-neutral-200/50' 
+            ? 'bg-theme-light/95 backdrop-blur-xl shadow-2xl border-b border-theme-heading/20' 
             : 'bg-transparent'
         }`}
         style={{
@@ -93,8 +93,8 @@ export function HeaderNew() {
                 <motion.div 
                   className={`flex items-center justify-center w-12 h-12 rounded-2xl transition-all duration-500 ${
                     isScrolled 
-                      ? 'bg-neutral-900 shadow-lg' 
-                      : 'bg-white/20 backdrop-blur-md border border-white/30 shadow-xl'
+                      ? 'bg-theme-text shadow-lg' 
+                      : 'bg-theme-heading/20 backdrop-blur-md border border-theme-heading/30 shadow-xl'
                   }`}
                   whileHover={{ 
                     scale: 1.1, 
@@ -113,7 +113,7 @@ export function HeaderNew() {
                 <motion.span 
                   className={`text-2xl font-bold tracking-tight transition-all duration-500 ${
                     isScrolled 
-                      ? 'text-neutral-900' 
+                      ? 'text-theme-text' 
                       : 'text-white drop-shadow-2xl'
                   }`}
                   style={{ 
@@ -146,8 +146,8 @@ export function HeaderNew() {
                       href={item.href}
                       className={`relative px-1 py-2 font-medium transition-all duration-300 group ${
                         isScrolled 
-                          ? 'text-neutral-700 hover:text-neutral-900' 
-                          : 'text-white/90 hover:text-white'
+                          ? 'text-theme-text/70 hover:text-theme-text' 
+                          : 'text-theme-heading/90 hover:text-theme-heading'
                       }`}
                     >
                       <span className="relative z-10">
@@ -158,8 +158,8 @@ export function HeaderNew() {
                       <span
                         className={`absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 transition-all duration-300 group-hover:w-3/4 ${
                           isScrolled 
-                            ? 'bg-neutral-900' 
-                            : 'bg-white'
+                            ? 'bg-theme-text' 
+                            : 'bg-theme-heading'
                         }`}
                       />
                     </Link>
@@ -181,8 +181,8 @@ export function HeaderNew() {
                   href="/booking"
                   className={`px-6 py-3 rounded-xl font-semibold transition-all duration-500 flex items-center space-x-2 ${
                     isScrolled 
-                      ? 'bg-neutral-900 text-white hover:bg-neutral-800 shadow-lg hover:shadow-xl' 
-                      : 'bg-white/20 text-white backdrop-blur-md border border-white/40 hover:bg-white/30 hover:border-white/60 shadow-xl hover:shadow-2xl'
+                      ? 'bg-theme-text text-theme-light hover:bg-theme-text/80 shadow-lg hover:shadow-xl' 
+                      : 'bg-theme-heading/20 text-theme-heading backdrop-blur-md border border-theme-heading/40 hover:bg-theme-heading/30 hover:border-theme-heading/60 shadow-xl hover:shadow-2xl'
                   }`}
                 >
                   <span>Book Now</span>
@@ -196,7 +196,7 @@ export function HeaderNew() {
               onClick={toggleMenu}
               className={`lg:hidden p-3 rounded-xl transition-all duration-500 ${
                 isScrolled
-                  ? 'text-neutral-900 hover:bg-neutral-100'
+                  ? 'text-theme-text hover:bg-theme-light/50'
                   : 'text-white hover:bg-white/20 backdrop-blur-md'
               }`}
               whileHover={{ scale: 1.1 }}
@@ -238,7 +238,7 @@ export function HeaderNew() {
           >
             {/* Immersive Background */}
             <motion.div 
-              className="absolute inset-0 bg-gradient-to-br from-neutral-900 via-black to-neutral-800"
+              className="absolute inset-0 bg-gradient-to-br from-theme-dark via-theme-text to-theme-dark"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -257,7 +257,7 @@ export function HeaderNew() {
 
             {/* Menu Content Container - Slides up from bottom */}
             <motion.div
-              className="absolute bottom-0 left-0 right-0 h-full flex flex-col bg-gradient-to-br from-neutral-900 via-black to-neutral-800"
+              className="absolute bottom-0 left-0 right-0 h-full flex flex-col bg-gradient-to-br from-theme-dark via-theme-text to-theme-dark"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}

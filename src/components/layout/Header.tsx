@@ -32,7 +32,7 @@ export function Header() {
     <motion.header
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-neutral-200' 
+          ? 'bg-theme-light/95 backdrop-blur-md shadow-lg border-b border-neutral-200' 
           : 'bg-transparent'
       }`}
       initial={{ y: -100 }}
@@ -45,16 +45,16 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-3 hover-effect group">
             <motion.div 
               className={`flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 ${
-                scrolled ? 'bg-neutral-900' : 'bg-white/20 backdrop-blur-sm border border-white/30'
+                scrolled ? 'bg-theme-dark' : 'bg-theme-heading/20 backdrop-blur-sm border border-theme-heading/30'
               }`}
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Plane className="w-6 h-6 text-white transform rotate-45 group-hover:rotate-90 transition-transform duration-300" />
+              <Plane className="w-6 h-6 text-theme-heading transform rotate-45 group-hover:rotate-90 transition-transform duration-300" />
             </motion.div>
             <motion.span 
               className={`text-2xl font-bold tracking-tight transition-all duration-300 ${
-                scrolled ? 'text-neutral-900' : 'text-white drop-shadow-lg'
+                scrolled ? 'text-theme-text' : 'text-theme-heading drop-shadow-lg'
               }`}
               style={{ letterSpacing: '-0.01em', fontFamily: 'Helvetica, Arial, sans-serif' }}
               whileHover={{ scale: 1.02 }}
@@ -76,11 +76,11 @@ export function Header() {
                   href={item.href}
                   className={`font-medium transition-all duration-300 hover-effect relative group ${
                     scrolled 
-                      ? 'text-neutral-700 hover:text-neutral-900' 
-                      : 'text-white/90 hover:text-white drop-shadow-sm'
+                      ? 'text-theme-text/70 hover:text-theme-text' 
+                      : 'text-theme-heading/90 hover:text-theme-heading drop-shadow-sm'
                   } ${
                     pathname === item.href 
-                      ? scrolled ? 'text-neutral-900' : 'text-white'
+                      ? scrolled ? 'text-theme-text' : 'text-theme-heading'
                       : ''
                   }`}
                 >
@@ -88,7 +88,7 @@ export function Header() {
                   {pathname === item.href && (
                     <motion.div
                       className={`absolute -bottom-2 left-0 w-full h-1 rounded-full transition-all duration-300 ${
-                        scrolled ? 'bg-neutral-900' : 'bg-white'
+                        scrolled ? 'bg-theme-text' : 'bg-theme-heading'
                       }`}
                       layoutId="underline"
                       initial={{ scaleX: 0 }}
@@ -112,8 +112,8 @@ export function Header() {
                 href="/booking"
                 className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
                   scrolled 
-                    ? 'bg-white text-black hover:bg-white/90 shadow-lg' 
-                    : 'bg-white/20 text-white backdrop-blur-sm border border-white/40 hover:bg-white/30 hover:border-white/60'
+                    ? 'bg-theme-light text-theme-text hover:bg-theme-light/90 shadow-lg' 
+                    : 'bg-theme-heading/20 text-theme-heading backdrop-blur-sm border border-theme-heading/40 hover:bg-theme-heading/30 hover:border-theme-heading/60'
                 }`}
               >
                 Book Now
@@ -126,8 +126,8 @@ export function Header() {
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-3 rounded-lg transition-all duration-300 hover-effect ${
               scrolled
-                ? 'text-black hover:bg-white/90'
-                : 'text-white hover:bg-white/20'
+                ? 'text-theme-text hover:bg-theme-light/90'
+                : 'text-theme-heading hover:bg-theme-heading/20'
             }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -195,11 +195,11 @@ export function Header() {
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
           >
             {/* Glassmorphism Background */}
-            <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
+            <div className="absolute inset-0 bg-theme-dark/60 backdrop-blur-md" />
             
             {/* Menu Panel */}
             <motion.div
-              className="absolute inset-y-0 right-0 w-full max-w-sm bg-white/10 backdrop-blur-xl border-l border-white/20 shadow-2xl"
+              className="absolute inset-y-0 right-0 w-full max-w-sm bg-theme-heading/10 backdrop-blur-xl border-l border-theme-heading/20 shadow-2xl"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -209,7 +209,7 @@ export function Header() {
             {/* Close Button - Glassmorphism Style */}
             <motion.button
               onClick={() => setIsOpen(false)}
-              className="absolute top-6 right-6 w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 hover:border-white/50 flex items-center justify-center text-white transition-all duration-300 shadow-lg"
+              className="absolute top-6 right-6 w-12 h-12 rounded-xl bg-theme-heading/20 backdrop-blur-sm border border-theme-heading/30 hover:bg-theme-heading/30 hover:border-theme-heading/50 flex items-center justify-center text-theme-heading transition-all duration-300 shadow-lg"
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ delay: 0.1, duration: 0.3, ease: 'backOut' }}

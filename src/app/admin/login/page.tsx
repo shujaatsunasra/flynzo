@@ -53,7 +53,7 @@ export default function AdminLogin() {
           <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
             <Lock className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">Admin Login</h1>
+          <h1 className="text-2xl font-bold text-theme-text">Admin Login</h1>
           <p className="text-gray-600 mt-2">Flynzo Innovation Private Limited</p>
         </div>
 

@@ -74,14 +74,14 @@ export function SocialProof() {
         >
           <div className="text-center mb-8">
             <motion.div
-              className="inline-flex items-center space-x-2 bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4"
+              className="inline-flex items-center space-x-2 bg-theme-light text-theme-text px-4 py-2 rounded-full text-sm font-medium mb-4"
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              <div className="w-2 h-2 bg-theme-heading rounded-full animate-pulse" />
               <span>Live Booking Activity</span>
             </motion.div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-bold text-neutral-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-bold text-theme-text">
               Travelers Are Booking Right Now
             </h2>
           </div>
@@ -108,7 +108,7 @@ export function SocialProof() {
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-neutral-900 text-sm truncate">
+                    <p className="font-semibold text-theme-text text-sm truncate">
                       {booking.destination}
                     </p>
                     <div className="flex items-center space-x-2 text-xs text-neutral-600">
@@ -133,14 +133,14 @@ export function SocialProof() {
           viewport={{ once: true }}
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-theme-text mb-4">
               What Our Travelers Say
             </h2>
             <div className="flex items-center justify-center space-x-1 mb-2">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
               ))}
-              <span className="ml-2 text-lg font-semibold text-neutral-900">4.9/5</span>
+              <span className="ml-2 text-lg font-semibold text-theme-text">4.9/5</span>
             </div>
             <p className="text-neutral-600">Based on 2,847 verified reviews</p>
           </div>
@@ -183,7 +183,7 @@ export function SocialProof() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold text-neutral-900 text-sm">
+                    <p className="font-semibold text-theme-text text-sm">
                       {testimonial.author}
                     </p>
                     <p className="text-xs text-neutral-600 flex items-center">
@@ -207,7 +207,7 @@ export function SocialProof() {
         >
           <div className="space-y-2">
             <motion.div
-              className="text-3xl md:text-4xl font-bold text-neutral-900"
+              className="text-3xl md:text-4xl font-bold text-theme-text"
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -220,7 +220,7 @@ export function SocialProof() {
 
           <div className="space-y-2">
             <motion.div
-              className="text-3xl md:text-4xl font-bold text-neutral-900"
+              className="text-3xl md:text-4xl font-bold text-theme-text"
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -233,7 +233,7 @@ export function SocialProof() {
 
           <div className="space-y-2">
             <motion.div
-              className="text-3xl md:text-4xl font-bold text-neutral-900"
+              className="text-3xl md:text-4xl font-bold text-theme-text"
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
@@ -246,7 +246,7 @@ export function SocialProof() {
 
           <div className="space-y-2">
             <motion.div
-              className="text-3xl md:text-4xl font-bold text-neutral-900"
+              className="text-3xl md:text-4xl font-bold text-theme-text"
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}

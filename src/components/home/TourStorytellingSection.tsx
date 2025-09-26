@@ -164,7 +164,7 @@ export default function TourStorytellingSection() {
   }
 
   return (
-    <div className="relative h-screen overflow-hidden bg-black">
+    <div className="relative h-screen overflow-hidden bg-theme-dark">
       <div className="flex justify-center items-center min-h-[500px]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
           {storyElements.map((story, index) => (
@@ -188,7 +188,7 @@ export default function TourStorytellingSection() {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   quality={90}
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                <div className="absolute inset-0 bg-theme-dark/40 flex items-center justify-center">
                   <div className="text-center text-white">
                     <h3 className="text-xl font-bold mb-2">{story.title}</h3>
                     <p className="text-sm opacity-90">{story.subtitle}</p>

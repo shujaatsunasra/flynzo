@@ -27,7 +27,7 @@ export function FilterBar() {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all hover-effect ${
                     activeFilter === filter
-                      ? 'bg-neutral-900 text-white'
+                      ? 'bg-theme-text text-theme-light'
                       : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
                   }`}
                 >
@@ -39,7 +39,7 @@ export function FilterBar() {
 
           {/* View Controls */}
           <div className="flex items-center space-x-4">
-            <button className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-900 transition-colors hover-effect">
+            <button className="flex items-center space-x-2 text-theme-text/70 hover:text-theme-text transition-colors hover-effect">
               <SlidersHorizontal className="w-5 h-5" />
               <span className="text-sm font-medium">Advanced Filters</span>
             </button>

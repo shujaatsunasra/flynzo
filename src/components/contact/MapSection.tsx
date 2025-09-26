@@ -29,7 +29,7 @@ export function MapSection() {
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                   <div>
-                    <div className="font-semibold text-neutral-900">Palanpur Office</div>
+                    <div className="font-semibold text-theme-text">Palanpur Office</div>
                     <div className="text-sm text-neutral-600">Shop No.28, Alif Plaza, Shop B/143/28, 1st Floor, Kanodar, Banaskantha, Palanpur, Gujarat, India, 385520</div>
                   </div>
                 </div>
@@ -39,7 +39,7 @@ export function MapSection() {
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                   <div>
-                    <div className="font-semibold text-neutral-900">Contact Person</div>
+                    <div className="font-semibold text-theme-text">Contact Person</div>
                     <div className="text-sm text-neutral-600">Nashra, Nitin Mongroda - Flynzo Innovation Private Limited</div>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ export function MapSection() {
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                   <div>
-                    <div className="font-semibold text-neutral-900">Emergency Contact</div>
+                    <div className="font-semibold text-theme-text">Emergency Contact</div>
                     <div className="text-sm text-neutral-600">+91 9724287467 - Available 24/7</div>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ export function MapSection() {
 
         {/* Floating Action Button */}
         <div className="absolute bottom-6 right-6">
-          <button className="bg-neutral-900 hover:bg-neutral-800 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover-effect">
+          <button className="bg-theme-text hover:bg-theme-text/80 text-theme-light w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover-effect">
             <MapPin className="w-6 h-6" />
           </button>
         </div>

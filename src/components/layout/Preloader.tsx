@@ -110,7 +110,7 @@ export function Preloader({ onComplete }: PreloaderProps = {}) {
   return (
     <AnimatePresence>
       <motion.div
-        className="preloader fixed inset-0 z-[10000] grid place-items-center overflow-hidden bg-black"
+        className="preloader fixed inset-0 z-[10000] grid place-items-center overflow-hidden bg-theme-dark"
         initial={{ opacity: 1 }}
         exit={{
           opacity: 0,
